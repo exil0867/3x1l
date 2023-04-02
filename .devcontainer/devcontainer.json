@@ -1,6 +1,8 @@
 {
 	"name": "Debian",
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:2": {
 			"installZsh": true,
