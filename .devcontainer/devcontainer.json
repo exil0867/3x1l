@@ -29,8 +29,9 @@
 			"version": "latest"
 		}
 	},
-
-	"postCreateCommand": "rustup target add wasm32-unknown-unknown && cargo install --locked trunk",
+	"forwardPorts": [
+		8080
+	  ],
 	"customizations": {
 		"vscode": {
 			"extensions": [
