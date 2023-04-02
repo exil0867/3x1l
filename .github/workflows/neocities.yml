@@ -19,7 +19,7 @@ jobs:
     - uses: hecrj/setup-rust-action@v1
       with:
         rust-version: stable
-    - name: Install `trunk`
+    - name: Install Trunk
       run: cargo install trunk
     - name: Add the WASM build target
       run: rustup target add wasm32-unknown-unknown
