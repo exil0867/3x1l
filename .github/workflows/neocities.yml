@@ -19,10 +19,6 @@ jobs:
     - uses: hecrj/setup-rust-action@v1
       with:
         rust-version: stable
-    - name: Install deps and build
-      run: |
-        npm i
-        npm run build
     - name: Install `trunk`
       run: cargo install trunk
     - name: Add the WASM build target
