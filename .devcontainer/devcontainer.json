@@ -32,6 +32,7 @@
 	"forwardPorts": [
 		8080
 	  ],
+	"postCreateCommand": "bash ./devcontainer/post-create.sh",
 	"customizations": {
 		"vscode": {
 			"extensions": [
