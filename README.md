@@ -2,8 +2,9 @@
 
 This is a simple personal website application written in pure Rust with the Yew framework and Assembly for optimized performance.
 
-## Frameworks Used
+## Technologies used
+- [Rust](https://www.rust-lang.org/): A systems programming language that emphasizes safety, speed, and concurrency.
+- [WebAssembly](https://webassembly.org/) A binary format for executing code on the web, designed to be fast, secure, and platform-independent.
+- [Trunk](https://trunkrs.dev/) A web application bundler for Rust, providing a simple and fast way to build and deploy web applications.
 
-- [Rust](https://www.rust-lang.org/) - A fast and reliable systems programming language.
-- [Yew](https://yew.rs/) - A modern Rust framework for creating multi-threaded front-end web apps.
-- Assembly - Low-level language used for optimized performance.
+Project dependencies can be found in: [Cargo.toml](Cargo.toml)
