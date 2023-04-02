@@ -82,7 +82,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "exilvm-site"
+name = "exilvmlinuz"
 version = "0.1.0"
 dependencies = [
  "bounce",
