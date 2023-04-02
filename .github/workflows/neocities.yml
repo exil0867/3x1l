@@ -25,9 +25,9 @@ jobs:
       run: rustup target add wasm32-unknown-unknown
     - name: Build the app
       run: trunk build --release
-    - name: Deploy to neocities
-      uses: bcomnes/deploy-to-neocities@v1
+    - name: Deploy to Glitch
+      uses: kanadgupta/glitch-sync@main
       with:
-        api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
-        cleanup: true
-        dist_dir: dist
+        auth-token: '${{ secrets.GLITCH_PROJECT_AUTH }}'
+        project-id: '${{ secrets.GLITCH_PROJECT_ID }}'
+        path: 'dist'
