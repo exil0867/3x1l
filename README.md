@@ -1,6 +1,6 @@
 # ./exilvmlinuz
 
-This is a simple personal website application written in pure Rust with the Yew framework and Assembly for optimized performance.
+This is a simple personal website application written in pure Rust with the Yew framework, WebAssembly and Trunk for optimized performance.
 
 ## Technologies used
 - [Rust](https://www.rust-lang.org/): A systems programming language that emphasizes safety, speed, and concurrency.
