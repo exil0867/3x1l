@@ -29,9 +29,7 @@ jobs:
       with:
         node-version: 18
     - name: Install Vercel CLI
-        run: |
-          npm install -g npm@latest
-          npm install -g vercel@latest
+        run: npm install -g npm@latest && npm install -g vercel@latest
     - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_PROJECT_TOKEN }}
     - name: Deploy to Vercel
