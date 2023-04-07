@@ -38,7 +38,7 @@ fn about_me() -> Html {
                     style="text-transform: uppercase; color: #07d404; text-decoration: none;"
                     target="_blank"
                     title="The source code of this page"
-                    href="https://github.com/exilvm/exilvmlinuz"
+                    href="https://github.com/exilvm/linuz"
                     rel="noreferrer"
                 >
                     { "3x!1" }
