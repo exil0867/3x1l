@@ -1,4 +1,4 @@
-# ./exil[vmlinuz](http://www.linfo.org/vmlinuz.html)
+# ./exil[vmlinuz](http://archive.today/rjU4N)
 
 This is a simple personal website application written in pure Rust with the Yew framework, WebAssembly and Trunk for optimized performance.
 
