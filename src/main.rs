@@ -72,11 +72,6 @@ struct ListItem {
 fn socials() -> Html {
     let list = vec![
         ListItem {
-            children: "Twitter",
-            href: "https://twitter.com/exilvm",
-            target: Some("_blank"),
-        },
-        ListItem {
             children: "Telegram",
             href: "tg://resolve?domain=exilvm",
             target: None,
