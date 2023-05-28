@@ -215,6 +215,11 @@ fn resources() -> Html {
             href: "https://news.ycombinator.com",
             target: "_blank",
         },
+        ResourceItem {
+            children: "ArchWiki",
+            href: "https://wiki.archlinux.org/title/Table_of_contents",
+            target: "_blank",
+        },
     ];
 
     html! {
