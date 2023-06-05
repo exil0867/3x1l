@@ -220,6 +220,11 @@ fn resources() -> Html {
             href: "https://wiki.archlinux.org/title/Table_of_contents",
             target: "_blank",
         },
+        ResourceItem {
+            children: "i do believe rsm was right",
+            href: "https://invidious.snopyta.org/watch?v=VFIlYy9GuH0",
+            target: "_blank",
+        },
     ];
 
     html! {
