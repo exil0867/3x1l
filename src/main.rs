@@ -222,7 +222,7 @@ fn resources() -> Html {
         },
         ResourceItem {
             children: "i do believe rsm was right",
-            href: "https://invidious.snopyta.org/watch?v=VFIlYy9GuH0",
+            href: "https://yt.artemislena.eu/watch?v=VFIlYy9GuH0",
             target: "_blank",
         },
     ];
