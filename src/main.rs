@@ -116,7 +116,7 @@ fn socials() -> Html {
 
 #[function_component(Contact)]
 fn contact() -> Html {
-    let aliased_email = "exilvm+9x01@disroot.org";
+    let aliased_email = "contact@n0t3x1l.ovh";
     let mailto = format!("mailto:{}", aliased_email);
 
     html! {
