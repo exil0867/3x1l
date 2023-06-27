@@ -1,6 +1,5 @@
 name: Build and deploy to Cloudflare Pages
 
-# only run on changes to master
 on:
   push:
     branches:
