@@ -1,8 +1,4 @@
-name: Build and deploy to Vercel
-
-env:
-  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+name: Build and deploy to Github Pages
 
 # only run on changes to master
 on:
@@ -10,9 +6,19 @@ on:
     branches:
       - master
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v3
     - uses: hecrj/setup-rust-action@v1
@@ -23,16 +29,11 @@ jobs:
     - name: Add the WASM build target
       run: rustup target add wasm32-unknown-unknown
     - name: Build the app
-      run: trunk build --release
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
+      run: trunk build --release --public-url ${{ github.event.repository.name }}
+    - name: Upload `dist` directory as an artifact
+      uses: actions/upload-pages-artifact@v1
       with:
-        node-version: 18
-    - name: Install Vercel CLI
-      run: |
-        npm install -g npm@latest
-        npm install -g vercel@latest
-    - name: Pull Vercel Environment Information
-      run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_PROJECT_TOKEN }}
-    - name: Deploy to Vercel
-      run: vercel --cwd dist --prod --token=${{ secrets.VERCEL_PROJECT_TOKEN }}
+        path: 'dist'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
