@@ -13,7 +13,7 @@ jobs:
       deployments: write
     steps:
     - uses: actions/checkout@v4
-    - uses: hecrj/setup-rust-action@v1
+    - uses: hecrj/setup-rust-action@v2
       with:
         rust-version: stable
     - name: Install Trunk
