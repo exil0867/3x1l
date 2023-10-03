@@ -4,6 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-yew = { version = "0.21", features = ["csr"] }
+yew = { version = "0.20", features = ["csr"] }
 gravatar-rs = "0.2.2"
 bounce = { version ="0.8.0", features = ["helmet"] }
