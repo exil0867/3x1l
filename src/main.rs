@@ -80,6 +80,11 @@ fn socials() -> Html {
             target: Some("_blank"),
         },
         ListItem {
+            children: "X",
+            href: "https://twitter.com/exilvm",
+            target: Some("_blank"),
+        },
+        ListItem {
             children: "Steam",
             href: "https://steamcommunity.com/id/exilvm",
             target: Some("_blank"),
