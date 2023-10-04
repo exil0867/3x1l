@@ -1,3 +1,5 @@
+use bounce::helmet::{Helmet, HelmetBridge};
+use bounce::BounceRoot;
 use gravatar_rs::Generator;
 use yew::prelude::*;
 
@@ -250,6 +252,9 @@ fn resources() -> Html {
 fn app() -> Html {
     html! {
         <>
+        <BounceRoot>
+        <HelmetBridge default_title="default title" />
+        <Helmet>
         <link rel="icon" href={get_profile_avatar().clone()} />
         <link rel="apple-touch-icon" href={get_profile_avatar().clone()} />
         <meta charset="utf-8" />
@@ -266,6 +271,8 @@ fn app() -> Html {
             &quot;theme_color&quot;: &quot;#efff00&quot;,
             &quot;background_color&quot;: &quot;#000000&quot;
             }" />
+        </Helmet>
+        </BounceRoot>
         <div style="width: 390px">
         <AboutMe />
         <Socials />
