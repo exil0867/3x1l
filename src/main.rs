@@ -82,6 +82,11 @@ fn socials() -> Html {
             target: Some("_blank"),
         },
         ListItem {
+            children: "Matrix",
+            href: "https://matrix.to/#/@exil0816:tchncs.de",
+            target: Some("_blank"),
+        },
+        ListItem {
             children: "X",
             href: "https://x.com/exil0867",
             target: Some("_blank"),
