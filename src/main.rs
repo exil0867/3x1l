@@ -73,7 +73,7 @@ fn socials() -> Html {
     let list = vec![
         ListItem {
             children: "Telegram",
-            href: "tg://resolve?domain=exilvm",
+            href: "tg://resolve?domain=exil0865",
             target: None,
         },
         ListItem {
@@ -88,12 +88,12 @@ fn socials() -> Html {
         },
         ListItem {
             children: "Steam",
-            href: "https://steamcommunity.com/id/exilvm",
+            href: "https://steamcommunity.com/id/exil0839",
             target: Some("_blank"),
         },
         ListItem {
             children: "AniList",
-            href: "https://anilist.co/user/exilvm",
+            href: "https://anilist.co/user/exil0685",
             target: Some("_blank"),
         },
         ListItem {
