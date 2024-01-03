@@ -98,7 +98,7 @@ fn socials() -> Html {
         },
         ListItem {
             children: "Last.fm",
-            href: "https://last.fm/user/exilvm",
+            href: "https://last.fm/user/exil0908",
             target: Some("_blank"),
         },
     ];
