@@ -78,7 +78,7 @@ fn socials() -> Html {
         },
         ListItem {
             children: "Github",
-            href: "https://github.com/exilvm",
+            href: "https://github.com/exil0867",
             target: Some("_blank"),
         },
         ListItem {
