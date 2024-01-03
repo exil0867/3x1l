@@ -83,7 +83,7 @@ fn socials() -> Html {
         },
         ListItem {
             children: "X",
-            href: "https://x.com/exilvm",
+            href: "https://x.com/exil0867",
             target: Some("_blank"),
         },
         ListItem {
