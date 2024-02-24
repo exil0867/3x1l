@@ -5,5 +5,5 @@ edition = "2021"
 
 [dependencies]
 yew = { version = "0.21.0", features = ["csr"] }
-gravatar-rs = "0.2.2"
+gravatar-rs = "0.2.3"
 bounce = { version ="0.9.0", features = ["helmet"] }
