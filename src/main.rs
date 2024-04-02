@@ -38,7 +38,7 @@ fn about_me() -> Html {
                     style="text-transform: uppercase; color: #07d404; text-decoration: none;"
                     target="_blank"
                     title="The source code of this page"
-                    href="https://github.com/exilvm/linuz"
+                    href="https://github.com/exil0867/exil"
                     rel="noreferrer"
                 >
                     { "3x!1" }
@@ -175,7 +175,7 @@ fn crypto() -> Html {
         CryptoItem {
             name: "PGP key",
             address: html! {
-                <a target="_blank" rel="noreferrer" href="https://github.com/exilvm/exilvm/blob/master/key.pgp">{ "96120B10AD05294F" }</a>
+                <a target="_blank" rel="noreferrer" href="https://github.com/exil0867/exil0867/blob/master/key.pgp">{ "96120B10AD05294F" }</a>
             },
         },
     ];
@@ -265,12 +265,12 @@ fn app() -> Html {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta name="description" content="exilvm - Personal page" />
-        <title>{"./exilvmlinuz"}</title>
+        <meta name="description" content="./exil - Personal page" />
+        <title>{"./exil"}</title>
         <link rel="icon" href={get_profile_avatar().clone()} />
         <link rel="apple-touch-icon" href={get_profile_avatar().clone()} />
         <meta name="manifest" content="{
-            &quot;name&quot;: &quot;./exilvmlinuz&quot;,
+            &quot;name&quot;: &quot;./exil&quot;,
             &quot;start_url&quot;: &quot;.&quot;,
             &quot;display&quot;: &quot;fullscreen&quot;,
             &quot;theme_color&quot;: &quot;#efff00&quot;,
