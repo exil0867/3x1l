@@ -5,6 +5,8 @@ use yew::prelude::*;
 
 const EMAIL: &str = "exilvm@disroot.org";
 
+const REPOSITORY: &str = "https://github.com/exil0867/3x1l";
+
 fn get_profile_avatar() -> String {
     let generator = Generator::default().set_image_size(600);
     generator.generate(EMAIL)
@@ -38,7 +40,7 @@ fn about_me() -> Html {
                     style="text-transform: uppercase; color: #07d404; text-decoration: none;"
                     target="_blank"
                     title="The source code of this page"
-                    href="https://github.com/exil0867/3x1l"
+                    href={REPOSITORY}
                     rel="noreferrer"
                 >
                     { "3x!1" }
@@ -253,6 +255,23 @@ fn resources() -> Html {
     }
 }
 
+#[function_component(Footer)]
+fn footer() -> Html {
+
+    html! {
+        <section style="margin-top: 3rem" >
+            <small>
+                { "This page was written in Rust." }
+            </small>
+            <small>
+            { "Check out the  " }
+            <a href={REPOSITORY} target="_blank">{ "source code" }</a>
+            { "." }
+        </small>
+        </section>
+    }
+}
+
 #[function_component(App)]
 fn app() -> Html {
     html! {
@@ -284,6 +303,7 @@ fn app() -> Html {
         <Contact />
         <Crypto />
         <Resources />
+        <Footer />
         </div>
         </>
     }
