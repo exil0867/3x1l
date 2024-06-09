@@ -85,7 +85,7 @@ fn socials() -> Html {
         },
         ListItem {
             children: "XMPP",
-            href: "xmpp://exil0785@tchncs.de",
+            href: "xmpp://exil0132@xm2p.ix.tc",
             target: None,
         },
         ListItem {
