@@ -75,7 +75,7 @@ fn socials() -> Html {
     let list = vec![
         ListItem {
             children: "Telegram",
-            href: "tg://resolve?domain=exil0865",
+            href: "tg://resolve?domain=exil0967",
             target: None,
         },
         ListItem {
