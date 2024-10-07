@@ -70,6 +70,18 @@ struct ListItem {
     target: Option<&'static str>,
 }
 
+#[function_component(Intro)]
+fn intro() -> Html {
+    html! {
+        <section>
+        <small class="small-header">{"~"}</small>
+            <p>
+                <a href="https://github.com/exil0867/nixcfg" target="_blank">{ "My Homelab setup" }</a>
+            </p>
+        </section>
+    }
+}
+
 #[function_component(Socials)]
 fn socials() -> Html {
     let list = vec![
@@ -299,6 +311,7 @@ fn app() -> Html {
         </BounceRoot>
         <div style="width: 390px">
         <AboutMe />
+        <Intro />
         <Socials />
         <Contact />
         <Crypto />
