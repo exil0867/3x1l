@@ -221,7 +221,7 @@ fn resources() -> Html {
     let list = vec![
         ResourceItem {
             children: "InstallGentoo Wiki",
-            href: "https://wiki.installgentoo.com/wiki/Main_Page",
+            href: "https://igwiki.lyci.de/wiki/Main_Page",
             target: "_blank",
         },
         ResourceItem {
