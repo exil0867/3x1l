@@ -212,6 +212,29 @@
       margin-bottom: 0;
     }
   </style>
+  </head>
   <body>
+    <!-- Fallback message for browsers without WebAssembly support -->
+    <noscript>
+      <strong>
+        We're sorry, but this page doesn't work properly without JavaScript enabled. Please enable it to continue.
+      </strong>
+    </noscript>
+    <div id="wasm-not-supported" style="display: none;">
+      <strong>
+        Your browser does not support WebAssembly. Please update your browser or use a modern browser to view this page.
+      </strong>
+    </div>
+
+    <!-- Root element -->
+    <div id="root"></div>
+
+    <!-- Script to check for WebAssembly support -->
+    <script>
+      if (!('WebAssembly' in window)) {
+        document.getElementById('wasm-not-supported').style.display = 'block';
+        document.getElementById('root').style.display = 'none';
+      }
+    </script>
   </body>
 </html>
