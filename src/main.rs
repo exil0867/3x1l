@@ -140,7 +140,7 @@ fn socials() -> Html {
 
 #[function_component(Contact)]
 fn contact() -> Html {
-    let aliased_email = "contact@n0t3x1l.ovh";
+    let aliased_email = "contact@n0t3x1l.dev";
     let mailto = format!("mailto:{}", aliased_email);
 
     html! {
