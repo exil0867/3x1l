@@ -155,43 +155,41 @@ fn contact() -> Html {
 }
 
 #[derive(Clone, PartialEq)]
-struct CryptoItem {
+struct SupportItem {
     name: &'static str,
     address: Html,
 }
 
-#[function_component(Crypto)]
-fn crypto() -> Html {
+#[function_component(Support)]
+fn support() -> Html {
     let list = vec![
-        CryptoItem {
+        SupportItem {
+            name: "GitHub Sponsors",
+            address: html! { <a target="_blank" rel="noreferrer" href="https://github.com/sponsors/exil0867">{ "sponsors/exil0867" }</a> },
+        },
+        SupportItem {
             name: "BTC",
             address: html! { "17nFjdytthofdha6aSmBDSHnb9NcSAhd8Z" },
         },
-        CryptoItem {
+        SupportItem {
             name: "BTC (Bech32)",
             address: html! { "bc1q0rhwyzc8upxjzn0qddz2rhv86xh3qvsydjn865" },
         },
-        CryptoItem {
+        SupportItem {
             name: "ETH",
             address: html! { "0x677C5728D3E26152187Cc98E06CB47A58EF58eaA" },
         },
-        CryptoItem {
+        SupportItem {
             name: "XMR",
             address: html! {
                 "46SXLx7PGvm4u7FnDvNvoPYu48AP4fUfbHwCDw6koxbhUrT1bSYvuHe7et7q8uSJ52NJApxXUyLmX7AaJP7ysXcLRyeZaaz"
-            },
-        },
-        CryptoItem {
-            name: "PGP key",
-            address: html! {
-                <a target="_blank" rel="noreferrer" href="https://github.com/exil0867/exil0867/blob/master/key.pgp">{ "96120B10AD05294F" }</a>
             },
         },
     ];
 
     html! {
         <section>
-            <h4>{ "Cryptos" }</h4>
+            <h4>{ "Support" }</h4>
             <ul>
                 { for list.iter().enumerate().map(|(i, item)| html! {
                     <li key={i}>
@@ -309,7 +307,7 @@ fn app() -> Html {
         <Intro />
         <Socials />
         <Contact />
-        <Crypto />
+        <Support />
         <Resources />
         <Footer />
         </div>
