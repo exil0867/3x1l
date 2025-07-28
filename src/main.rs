@@ -97,7 +97,7 @@ fn socials() -> Html {
         },
         ListItem {
             children: "Matrix",
-            href: "https://matrix.to/#/@exil0816:midov.pl",
+            href: "https://matrix.to/#/@exil0816:ira.moe",
             target: Some("_blank"),
         },
         ListItem {
